@@ -1,0 +1,36 @@
+<navbarrm></navbarrm>
+
+<div class="container">
+  <h2>Restaurant profile</h2>
+  <div class="panel-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  
+	    <div class="panel panel-info">
+	      <div class="panel-heading">Restaurant name</div>
+	      <div class="panel-body">{{restaurant.name}}</div>
+	    </div>
+
+
+    <div class="panel panel-info">
+      <div class="panel-heading">Restaurant type</div>
+      <div class="panel-body">{{restaurant.description}}</div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">Menu</div>
+      <div class="panel-body">{{restaurant.jelovnici}}</div>
+      <div><a class='btn btn-primary btn-xs' href="#!/restaurantManager/addMenu"><span class="glyphicon glyphicon-plus"></span> Add Menu</a></div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">Drink Menu</div>
+      <div class="panel-body">{{restaurant.kartePica}}</div>
+      <div><a class='btn btn-primary btn-xs' href="#!/restaurantManager/addDrinkMenu"><span class="glyphicon glyphicon-plus"></span> Add Drink Menu</a></div>
+    </div>
+
+  </div>
+</div>
+
+<div id="mapouter">
+<div id="gmap_canvas">
+
+</div><style>#gmap_canvas{height:500px;width:600px;}#mapouter{overflow:hidden;height:500px;width:600px;}</style></div>

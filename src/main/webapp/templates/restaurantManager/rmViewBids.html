@@ -1,0 +1,13 @@
+<navbarrm></navbarrm>
+
+<div class="wrapper">
+Waiter : <select name="parent_selection" id="parent_selection">
+    
+    <option value="{{auction.id}}" ng-repeat="auction in auctions">{{auction.id}}</option>
+   
+</select>
+Day :
+<select name="child_selection" id="child_selection" >
+</select>
+
+<input type="submit" id="submit" value="Submit" ng-click="pickBid()" />

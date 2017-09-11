@@ -1,0 +1,29 @@
+<navbar ></navbar>
+Registration form:
+
+<div class="container">
+    <div class="row">
+		<div class="col-sm-12">
+			<form ng-submit="register()" >
+			
+				<label>First Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="userFName" ng-model="user.firstName" required></div>
+				
+				<label>Last Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="userLName" ng-model="user.lastName" required></div>
+				
+				<label>E-Mail</label>
+				<div class="input-group"><input type="email" class="form-control"  name="userEmail" ng-model="user.eMail" required></div>
+	
+				<label>Password</label>
+				<div class="input-group"><input type="password" class="form-control"  name="userPassword" ng-model="user.password" required></div>
+				
+				<label>Repeat Password</label>
+				<div class="input-group"><input type="password" class="form-control"  name="userPasswordR" ng-model="verif.password" required></div>
+				
+	   			<input type="submit" id="submit" value="Register" />
+	   			{{message}}
+   			</form>
+		</div>
+</div>
+</div>

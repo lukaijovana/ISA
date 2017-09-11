@@ -1,0 +1,50 @@
+<navbarrm id="zaklik"></navbarrm>
+
+
+<div class = "container" id="zz">
+	<div class = "row-fluid col-lg-8 col-md-8 col-sm-8 col-xs-8">
+		<div class = "row" ng-repeat="row in rows" >
+			<button class="btn cal-btn btn-default" id="a_{{row}}{{col}}" ng-click="selectButton($parent.$index, $index);" ng-repeat="col in cols">{{col}}{{row}}</button>
+	  	</div>
+	</div>
+</div>
+<b>Edit table at row:<i id="tekstred"></i> and col: <i id="tekstkol"></i></b>
+<div class = "container">
+	<form>
+		<label>Not Available:</label>
+			<input type = "checkbox" id="available" ng-click="checkListener()"/>
+		<br/>
+		<label>Table capacity:</label>
+			<div class="input-group"><input id="spinnerCap" name="value1"></div>
+		<label>Select region:</label>
+		<div class="input-group">
+			<select class="selectpicker" id="regionPick" >
+			      <option  ng-repeat="region in regions" value="{{region.id}}">{{region.name}}</option>
+			</select>
+		</div>
+		<label>Select segemnt:</label>
+		<div class="input-group">
+			<select class="selectpicker" id="segmentPick" >
+			      <option  ng-repeat="segment in segments" value="{{segment.id}}">{{segment.name}}</option>
+			</select>
+		</div>
+		<input type="submit" value="Save table" ng-click="saveTable()"/>
+	</form>
+</div>
+
+<div class = "container">
+	<div class = "row-fluid">
+		<div class="col-md-offset-8 col-lg-offset-8 col-sm-offset-8 col-xs-offset-8">
+			<form ng-submit="changeDimensions()">
+				<label>Number of rows:</label>
+					<div class="input-group"><input id="spinnerRow" name="value3">
+				<br/>
+				<label>Number of columns:</label>
+					<div class="input-group"><input id="spinnerCol" name="value4">
+				<input type="submit" value="Change size"/>
+			</form>
+		</div>
+	</div>
+</div>
+
+<button value="Save configuration" ng-click="saveConfig()">Save Config</button>

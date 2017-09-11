@@ -1,0 +1,69 @@
+<navbarrm></navbarrm>
+
+<label for="from">From</label>
+<input type="text" id="from" name="from">
+<label for="to">to</label>
+<input type="text" id="to" name="to">
+
+
+<div class="container" id="test">
+    <br />
+	<div class="row">
+
+        <div class="dual-list list-left col-md-5">
+            <div class="well text-right">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-search"></span>
+                            <input type="text" name="SearchDualList" class="form-control" placeholder="search" />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="btn-group">
+                            <a class="btn btn-default selector" title="select all"><i class="glyphicon glyphicon-unchecked"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="list-group" >
+                	<li class="list-group-item" ng-repeat="item in items" id = "{{item.name}}">{{item.name}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="list-arrows col-md-1 text-center">
+            <button class="btn btn-default btn-sm move-left">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </button>
+
+            <button class="btn btn-default btn-sm move-right">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </button>
+        </div>
+
+        <div class="dual-list list-right col-md-5">
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="btn-group">
+                            <a class="btn btn-default selector" title="select all"><i class="glyphicon glyphicon-unchecked"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="input-group">
+                            <input type="text" name="SearchDualList" class="form-control" placeholder="search" />
+                            <span class="input-group-addon glyphicon glyphicon-search"></span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="list-group" id="odabraneVrednosti">
+                    
+                </ul>
+            </div>
+        </div>
+
+	</div>
+</div>
+<form ng-submit="addMenu()">
+	<input type="submit" value="Dodaj"/>
+</form>

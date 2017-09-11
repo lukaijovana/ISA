@@ -1,0 +1,64 @@
+<navbarsys></navbarsys>
+
+<h1>Welcome back, {{user.firstName}} {{user.lastName}}!</h1>
+
+<div class="row">
+<div class="container">
+<h2>Your Visits</h2>
+    <div class="col-md-6">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Restaurant</th>
+            <th>Date</th>
+            <th>Rating</th>
+            <th>Friends</th>
+            <th class="text-center">Rate</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="visit in visits">
+            <tr>
+                <td>{{visit.restaurant}}</td>
+                <td>{{visit.date}}</td> <!-- od visit.startTime samo datum izvuci u kontroleru -->
+                <td>{{visit.ocena}}</td>
+                <td>{{visit.friends}}</td> <!--  od .invites izbaciti samog sebe prvo -->
+                <!--  Rating ideja 5 slikica svaka po ocena 1 2 3 4 5 
+                za sad stoji ovako samo.-->
+                <td class="text-center"><a class='btn btn-info btn-xs' href=""><span class="glyphicon glyphicon-plus"></span>Rate</a> </td>
+            </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+
+<div class="container">
+<h2>Friend Requests</h2>
+    <div class="col-md-6">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th class="text-center">Accept</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="friend in friends">
+            <tr>
+                <td>{{friend.firstName}}</td>
+                <td>{{friend.lastName}}</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' ng-click="confirmFriend(friend.id)"><span class="glyphicon glyphicon-plus"></span>Confirm</a> </td>
+            </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+</div>
+<div class="container ">
+<h2>Navigation</h2>
+<div class="col-md-6">
+<a class='btn btn-info' href="#!/guest/restaurants">Restaurants</a>
+<a class='btn btn-info' href="#!/guest/friends">Friend list</a>
+<a class='btn btn-info' href="#!/guest/profile">My Profile</a>
+</div>
+</div>
+

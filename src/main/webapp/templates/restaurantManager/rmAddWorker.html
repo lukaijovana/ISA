@@ -1,0 +1,38 @@
+<navbarrm></navbarrm>
+
+<div class="container">
+    <div class="row">
+		<div class="col-sm-12">
+			<form ng-submit="addWorker()" >
+				<label>First Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="workerFirstName" ng-model="worker.firstName"></div>
+	
+				<label>Last Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="workerlastName" ng-model="worker.lastName"></div>
+	
+				<label>Email</label>
+				<div class="input-group"><input type="text" class="form-control" name="workerEmail" ng-model="worker.eMail"></div>
+	
+				<label>Password</label>
+				<div class="input-group"><input type="password" class="form-control"  name="workerPassword" ng-model="worker.password"></div>
+	
+				<label>Country</label>
+				<div class="input-group"><input type="text" class="form-control" name="workerCountry" ng-model="worker.country"></div>
+				
+				<label>City</label>
+				<div class="input-group"><input type="text" class="form-control" name="workerCity" ng-model="worker.city"></div>
+				
+				<label>Address</label>
+				<div class="input-group"><input type="text" class="form-control" name="workerAddress" ng-model="worker.address"></div>
+				
+				<label>Role</label>
+				<div class="input-group">
+				<input type="radio"  ng-model="worker.role" ng-value="0" name="option">Waiter
+				<input type="radio"  ng-model="worker.role" ng-value="1" name="option">Cook
+				<input type="radio"  ng-model="worker.role" ng-value="2" name="option">Bartender</div>
+	
+	   			<input type="submit" id="submit" value="Submit" />
+   			</form>
+		</div>
+	</div>
+</div>

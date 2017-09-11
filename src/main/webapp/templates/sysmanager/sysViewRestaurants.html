@@ -1,0 +1,28 @@
+<navbarsys></navbarsys>
+	
+<div class="container">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Address</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="item in items">
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.country}}</td>
+                <td>{{item.city}}</td>
+                <td>{{item.address}}</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#!/sysmanager/addManagerToRestaurant/{{item.id}}"><span class="glyphicon glyphicon-plus"></span> Add Manager</a> </td>
+            </tr>
+    </tbody>
+    </table>
+    </div>
+</div>

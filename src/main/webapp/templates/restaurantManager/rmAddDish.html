@@ -1,0 +1,21 @@
+<navbarrm></navbarrm>
+
+<div class="container">
+    <div class="row">
+		<div class="col-sm-12">
+			<form ng-submit="addDish()" >
+				<label>Dish Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="dishName" ng-model="dish.name"></div>
+	
+				<label>Dish Description</label>
+				<div class="input-group"><input type="text" class="form-control"  name="dishDescription" ng-model="dish.description"></div>
+	
+				<label>Price</label>
+				<div class="input-group"><input type="text" class="form-control" name="dishPrice" ng-model="dish.price"></div>
+	
+	
+	   			<input type="submit" id="submit" value="Submit" />
+   			</form>
+		</div>
+	</div>
+</div>

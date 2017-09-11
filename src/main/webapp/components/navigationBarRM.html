@@ -1,0 +1,69 @@
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="navigationBar.css" rel="stylesheet"/>
+
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Login dropdown</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li id = "menjanje" class="active"><a href="#!/restaurantManager/home">Home</a></li>
+        <li><a href="#!/restaurantManager/profile">Profile</a></li>
+        <li class="dropdown">
+          <a href="window.location.href" class="dropdown-toggle" data-toggle="dropdown">Restaurant<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="#!/restaurantManager/viewRestaurant">View Restaurant</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/viewStats">View Stats</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/addDish">Add Dish</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/addDrink">Add Drink</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="window.location.href" class="dropdown-toggle" data-toggle="dropdown">Employees<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="#!/restaurantManager/addWorker">Add a Worker</a></li>
+             <li><a class="dropdown-item" href="#!/restaurantManager/addShift">Add a Shift</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/staffSchedule">Staff Schedule</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/manageWaiters">Manage Waiters</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="window.location.href" class="dropdown-toggle" data-toggle="dropdown">Tables<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="#!/restaurantManager/seatingConfiguration">Seating Configuration</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/addSegment">Add segment</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/addRegion">Add a region</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="window.location.href" class="dropdown-toggle" data-toggle="dropdown">Bidders<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="#!/restaurantManager/registerBidder">Register Bidder</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/createAuction">Create Auction</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/viewAuctions">View Auctions</a></li>
+            <li><a class="dropdown-item" href="#!/restaurantManager/viewBids">View Bids</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text" id="korisnik"></p></li>
+       
+          <li><a href="#">Log out</a></li>
+			
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+

@@ -1,0 +1,23 @@
+<navbar ></navbar>
+Please log in to continue.
+
+<div class="container">
+    <div class="row">
+		<div class="col-sm-12">
+			<form ng-submit="loginIgor()" >
+				<label>E-Mail</label>
+				<div class="input-group"><input type="text" class="form-control"  name="userEmail" ng-model="user.email" required></div>
+	
+				<label>Password</label>
+				<div class="input-group"><input type="password" class="form-control"  name="userPassword" ng-model="user.password" required></div>
+				
+	   			<input type="submit" id="submit" value="Log In" />
+   			</form> {{message}}
+		</div>
+	</div><br>
+	<div class="row">
+	<a class='btn btn-info' href="#!/greet/register/" style="margin-right:20px;">Register</a>
+	<a class='btn btn-info' href="">Facebook</a>
+	<a class='btn btn-info' href="">Google+</a>
+	</div>
+</div>

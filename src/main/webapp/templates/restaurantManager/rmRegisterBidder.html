@@ -1,0 +1,33 @@
+<navbarrm></navbarrm>
+
+<div class="container">
+    <div class="row">
+		<div class="col-sm-12">
+			<form ng-submit="addBidder()" >
+				<label>First Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="bidderFirstName" ng-model="bidder.firstName"></div>
+	
+				<label>Last Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="bidderlastName" ng-model="bidder.lastName"></div>
+	
+				<label>Email</label>
+				<div class="input-group"><input type="text" class="form-control" name="bidderEmail" ng-model="bidder.eMail"></div>
+	
+				<label>Password</label>
+				<div class="input-group"><input type="password" class="form-control"  name="bidderPassword" ng-model="bidder.password"></div>
+	
+				<label>Country</label>
+				<div class="input-group"><input type="text" class="form-control" name="bidderCountry" ng-model="bidder.country"></div>
+				
+				<label>City</label>
+				<div class="input-group"><input type="text" class="form-control" name="bidderCity" ng-model="bidder.city"></div>
+				
+				<label>Address</label>
+				<div class="input-group"><input type="text" class="form-control" name="bidderAddress" ng-model="bidder.address"></div>
+				
+	
+	   			<input type="submit" id="submit" value="Submit" />
+   			</form>
+		</div>
+	</div>
+</div>

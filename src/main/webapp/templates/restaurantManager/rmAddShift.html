@@ -1,0 +1,29 @@
+<navbarrm></navbarrm>
+<form ng-submit="addShift()">
+
+	<div class="container">
+		<label for="shiftName">Shift Name:</label>
+		<input type = "text" name = "shiftName" ng-model="shift.name"/>
+	</div>
+	
+	<div class="container">
+	  <label for="spinner">Start hour:</label>
+	  <input id="spinner" name="value">
+	</div>
+	<div class="container">
+	  <label for="spinner1">Start minutes:</label>
+	  <input id="spinner1" name="value1">
+	</div>
+	
+	<div class="container">
+	  <label for="spinner2">End hour:</label>
+	  <input id="spinner2" name="value2">
+	</div>
+	<div class="container">
+	  <label for="spinner3">End minutes:</label>
+	  <input id="spinner3" name="value3">
+	</div>
+	<div class="container">
+		<input type="submit" value="Add"/>
+	</div>
+</form>

@@ -1,0 +1,60 @@
+<navbarsys></navbarsys>
+
+<h1>New Reservation</h1>
+
+<div class="container">
+<h2>Select A Restaurant:</h2>
+    <div class="col-md-8">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Restaurant</th>
+            <th>Description</th>
+            <th>Distance</th>
+            <th>Rating</th>
+            <th>Friend Rating</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="restaurant in restaurants">
+            <tr>
+                <td>{{restaurant.name}}</td>
+                <td>{{restaurant.description}}</td>
+                <td>{{restaurant.distance}}</td>
+                <td>{{restaurant.rating}}</td>
+                <td>{{restaurant.friendRating}}</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' ng-click="newReservation(restaurant.id)"><span class="glyphicon glyphicon-plus"></span>Make Reservation</a> </td>
+            </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+
+<div>
+<div class="container">
+<h2>Select A Date:</h2>
+    <div class="col-sm-6" style="height:130px;">
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker11'>
+                <input type='text' class="form-control"" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                </span>
+            </div>
+            </div>
+    </div>
+    <script type="text/javascript">
+            
+    </script>
+</div></div>
+
+
+<div class="container">
+<h2>How long will you be staying (in hours):</h2>
+<div>
+<form>
+<div class="input-group"><input id="spinner" name="value1"></div>
+</form>
+</div>
+</div>

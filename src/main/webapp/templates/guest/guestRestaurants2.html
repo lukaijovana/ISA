@@ -1,0 +1,18 @@
+<navbarsys></navbarsys>
+
+<h1>New Reservation</h1>
+
+<h2>Select A Table For {{reservation.startTime}}:</h2>
+<div class = "container" id="zz">
+	<div class = "row-fluid col-lg-8 col-md-8 col-sm-8 col-xs-8">
+		<div class = "row" ng-repeat="row in rows" >
+			<button class="btn cal-btn btn-default" id="a_{{row}}{{col}}" ng-click="selectButton($parent.$index, $index);" ng-repeat="col in cols">{{col}}{{row}}</button>
+	  	</div>
+	</div>
+</div>
+
+<div class="container">
+<h2>Information:</h2>
+<span style="color:red;">Unavailable location</span><br>
+<span style="color:yellow;">Already Reserved</span>
+</div>

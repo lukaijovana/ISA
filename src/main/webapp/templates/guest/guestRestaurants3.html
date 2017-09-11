@@ -1,0 +1,27 @@
+<navbarsys></navbarsys>
+
+<h1>New Reservation</h1>
+
+<div class="container">
+<h2>Send invitations:</h2>
+    <div class="col-md-6">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="friend in friends">
+            <tr>
+                <td>{{friend.firstName}}</td>
+                <td>{{friend.lastName}}</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' ng-click="inviteFriend(friend.id)"><span class="glyphicon glyphicon-plus"></span>Invite</a> </td>
+            </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+<div class="container">Note: You may select up to {{reservation.capacity}} friends.</div>
+<div class="container"><a class='btn btn-info btn' ng-click="finishReservation()">Finish</a></div>

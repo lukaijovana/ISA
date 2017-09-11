@@ -1,0 +1,30 @@
+<navbarrm></navbarrm>
+
+<div class="container">
+    <div class="row">
+		<div class="col-sm-12">
+				<label>Segment Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="segmentName" ng-model="region.name"></div>
+	
+				<label>Select Tables:</label>
+				<div class="container" style="margin-top:20px;">
+					<div class="row">
+				       
+				        <div class="col-xs-6">
+				            <div class="well" style="max-height: 300px;overflow: auto;">
+				            	<ul id="check-list-box" class="list-group checked-list-box" >
+				                  <li class="list-group-item" ng-repeat="table in tables" >{{table.id}}</li>
+				                  
+				                </ul>
+				                <br />
+				                <button class="btn btn-primary col-xs-12" id="get-checked-data">Get Checked Data</button>
+				            </div>
+				            <pre id="display-json"></pre>
+				        </div>
+					</div>
+    
+				</div>
+	
+		</div>
+	</div>
+</div>

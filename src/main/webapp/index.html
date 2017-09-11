@@ -1,0 +1,114 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script src="angular/angular.js"></script>
+<script src="angular/angular-route.js"></script>
+<script src="jquery/jquery-3.1.1.js"></script>
+<link href="https://bootswatch.com/slate/bootstrap.min.css" rel="stylesheet"/>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+<link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>     
+
+<!--<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js">
+</script> Zakomentarisao jer ubija spinnere -->
+
+<!-- Koristi sockjs biblioteku da se konektuje na /stomp endpoint -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/sockjs/1.0.3/sockjs.min.js">
+</script>
+<!-- Koristi stomp biblioteku da se pretplati na brokerov /topic/message endpoint -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css" />                  
+
+
+</head>
+<body ng-app="myApp" ng-controller="IndexController" >
+	
+	<div ng-view ></div>
+	
+	<script src="app.js"></script>
+	<script src="navigationBar.js"></script>
+	<script src="templates/greet/greeting.js"></script>
+	<script src="templates/greet/register.js"></script>
+	<script src="index.js"></script>
+	<script src="services/restaurantService.js"></script>
+	<script src="services/restaurantManagerService.js"></script>
+	<script src="services/greetingService.js"></script>
+	<script src="navBarController.js"></script>
+	<script src="templates/sysmanager/sysprofile.js"></script>
+	<script src="services/sysmanagerService.js"></script>
+	<script src="navigationBarSysmanager.js"></script>
+	<script src="templates/sysmanager/sysViewRestaurant.js"></script>
+	<script src="templates/sysmanager/sysAddRestaurant.js"></script>
+	<script src="templates/sysmanager/sysAddSysmanager.js"></script>
+	<script src="templates/sysmanager/sysAddManagerToRestaurant.js"></script>
+	<script src="templates/sysmanager/sysHome.js"></script>
+	<script src="templates/restaurantManager/rmHome.js"></script>
+	<script src="components/navigationBarRM.js"></script>
+	<script src="services/workerService.js"></script>
+	<script src="templates/restaurantManager/rmViewRestaurant.js"></script>
+	<script src="templates/restaurantManager/rmAddWorker.js"></script>
+	<script src="services/guestService.js"></script>
+	<script src="services/reservationService.js"></script>
+	<script src="templates/guest/guestHome.js"></script>
+	<script src="templates/guest/guestProfile.js"></script>
+	<script src="templates/guest/guestRestaurants.js"></script>
+	<script src="templates/guest/guestRestaurants2.js"></script>
+	<script src="templates/guest/guestRestaurants3.js"></script>
+	<script src="templates/guest/guestRestaurants4.js"></script>
+	<script src="templates/guest/guestRestaurants5.js"></script>
+	<script src="templates/guest/guestReservations.js"></script>
+	<script src="templates/guest/guestFriends.js"></script>
+	<script src="templates/guest/guestNewFriend.js"></script>
+	<script src="services/authService.js"></script>
+	<script src="services/menuService.js"></script>
+	<script src="templates/restaurantManager/rmAddMenu.js"></script>
+	<script src="services/dishService.js"></script>
+	<script src="templates/restaurantManager/rmAddDish.js"></script>
+	<script src="services/drinkService.js"></script>
+	<script src="templates/restaurantManager/rmAddDrink.js"></script>
+	<script src="services/drinkMenuService.js"></script>
+	<script src="templates/restaurantManager/rmAddDrinkMenu.js"></script>
+	<script src="templates/greet/verify.js"></script>
+	<script src="templates/greet/confirm.js"></script>
+	<script src="services/shiftService.js"></script>
+	<script src="templates/restaurantManager/rmAddShift.js"></script>
+	<script src="templates/restaurantManager/rmStaffSchedule.js"></script>
+	<script src="services/workerShiftService.js"></script>
+	<script src="services/segmentService.js"></script>
+	<script src="services/regionService.js"></script>
+	<script src="services/seatingConfigurationService.js"></script>
+	<script src="services/tableService.js"></script>
+	<script src="templates/restaurantManager/seatingConfiguration/rmAddRegion.js"></script>
+	<script src="templates/restaurantManager/seatingConfiguration/rmAddSegment.js"></script>
+	<script src="templates/restaurantManager/seatingConfiguration/rmSeatingConfiguration.js"></script>
+	<script src="templates/restaurantManager/rmManageWaiters.js"></script>
+	<script src="services/waiterShiftRegionService.js"></script>
+	<script src="services/bidderService.js"></script>
+	<script src="templates/restaurantManager/rmRegisterBidder.js"></script>
+	<script src="services/bidService.js"></script>
+	<script src="services/auctionItemService.js"></script>
+	<script src="services/auctionService.js"></script>
+	<script src="services/bidItemService.js"></script>
+	<script src="templates/restaurantManager/rmCreateAuction.js"></script>
+	<script src="templates/restaurantManager/rmViewAuctions.js"></script>
+	<script src="templates/restaurantManager/rmViewBids.js"></script>
+	<script src="templates/bidder/bidderChangePassword.js"></script>
+	<script src="templates/bidder/bidderCreateBid.js"></script>
+	<script src="templates/bidder/bidderCreateBidItem.js"></script>
+	<script src="templates/bidder/bidderHome.js"></script>
+	<script src="templates/bidder/bidderProfile.js"></script>
+	<script src="templates/bidder/bidderViewAuctions.js"></script>
+	<script src="templates/bidder/bidderViewBids.js"></script>
+	<script src="components/navigationBarBidder.js"></script>
+	<script src="templates/bidder/bidderEditBid.js"></script>
+	<script src="templates/restaurantManager/rmViewStats.js"></script>
+</body>
+</html>

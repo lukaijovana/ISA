@@ -1,0 +1,20 @@
+<navbarbidder></navbarbidder>
+
+<table class="table table-stripper table-bordered">
+	<thead>
+		<tr>
+			<th>Restaurant</th>
+			<th>Date From</th>
+			<th>Date To</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in items">
+			<td>{{sred[item.id]}}</td>
+			<td>{{item.dateFrom}}</td>
+			<td>{{item.dateTo}}</td>
+			<td><a href="#!/bidder/bid/{{item.id}}">Bid</a></td>
+		</tr>
+	</tbody>
+</table>

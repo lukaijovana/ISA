@@ -1,0 +1,25 @@
+<navbarsys></navbarsys>
+<div class="container">
+    <div class="row">
+		<div class="col-sm-12">
+			<form ng-submit="addRestaurant()" >
+				<label>Name</label>
+				<div class="input-group"><input type="text" class="form-control"  name="restaurantName" ng-model="restaurant.name"></div>
+	
+				<label>Description</label>
+				<div class="input-group"><input type="text" class="form-control"  name="restaurantDescription" ng-model="restaurant.description"></div>
+	
+				<label>Country</label>
+				<div class="input-group"><input type="text" class="form-control" name="restaurantCountry" ng-model="restaurant.country"></div>
+	
+				<label>City</label>
+				<div class="input-group"><input type="text" class="form-control"  name="restaurantCity" ng-model="restaurant.city"></div>
+	
+				<label>Address</label>
+				<div class="input-group"><input type="text" class="form-control" name="restaurantAddress" ng-model="restaurant.address"></div>
+	
+	   			<input type="submit" id="submit" value="Submit" />
+   			</form>
+		</div>
+	</div>
+</div>

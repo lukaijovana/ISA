@@ -1,0 +1,19 @@
+<navbarrm></navbarrm>
+
+<div class="wrapper">
+Waiter : <select name="parent_selection" id="parent_selection">
+    
+    <option value="{{waiter.id}}" ng-repeat="waiter in waiters">{{waiter.firstName}} {{waiter.lastName}}</option>
+   
+</select>
+Day :
+<select name="child_selection" id="child_selection" >
+</select>
+Region :
+<select name="child_selection2" id="child_selection2">
+    
+    <option value="{{region.id}}" ng-repeat="region in regions">{{region.name}}</option>
+   
+</select>
+</div>
+<button ng-click="addWorkerShiftRegion()">Add</button>
